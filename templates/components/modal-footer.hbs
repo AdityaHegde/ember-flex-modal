@@ -1,0 +1,10 @@
+{{#if columnData.modal.showOk}}
+  <button type="button" class="btn btn-primary ok-btn" disabled="{{disableAlias}}" {{action "okClicked"}}>
+    {{columnData.modal.okLabel}}
+  </button>
+{{/if}}
+{{#if columnData.modal.showCancel}}
+  <button type="button" class="btn btn-default cancel-btn" data-dismiss="modal" {{action "cancelClicked"}}>
+    {{columnData.modal.cancelLabel}}
+  </button>
+{{/if}}

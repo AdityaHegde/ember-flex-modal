@@ -1,0 +1,16 @@
+<div class="modal-dialog" style="width:{{width}};">
+  <div class="modal-content" tabindex=-1>
+    {{#if columnDataGroup.modal.headerComponent}}
+      {{component columnDataGroup.modal.headerComponent record=record columnData=columnDataGroup.modal.headerColumnData modal=this
+                                                        tagName=columnDataGroup.modal.headerColumnData.modal.tagName}}
+    {{/if}}
+    {{#if columnDataGroup.modal.bodyComponent}}
+      {{component columnDataGroup.modal.bodyComponent record=record columnData=columnDataGroup.modal.bodyColumnData modal=this
+                                                      tagName=columnDataGroup.modal.bodyColumnData.modal.tagName}}
+    {{/if}}
+    {{#if columnDataGroup.modal.footerComponent}}
+      {{component columnDataGroup.modal.footerComponent record=record columnData=columnDataGroup.modal.footerColumnData modal=this
+                                                        tagName=columnDataGroup.modal.footerColumnData.modal.tagName}}
+    {{/if}}
+  </div>
+</div>
