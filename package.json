@@ -1,6 +1,6 @@
 {
   "name": "ember-flex-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A flexible module for modal windows configurable using column data.",
   "directories": {
     "doc": "doc",

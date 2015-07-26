@@ -3,6 +3,8 @@
 # compiled output
 /dist
 /tmp
+*.swp
+/docs
 
 # dependencies
 /node_modules

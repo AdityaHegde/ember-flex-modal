@@ -54,6 +54,11 @@ export default Ember.Component.extend({
    * @default "600px"
    */
   width : "600px",
+  widthStyle : Ember.computed("width", {
+    get : function() {
+      return new Ember.Handlebars.SafeString("width:" + this.get("width"));
+    },
+  }),
 
   /**
    * Callback called when ok is pressed.
